@@ -33,7 +33,7 @@ app.use('/users', usersRouter);
 
 app.use('/problem',function()
 {
-throw new Error ("Oops!! Something went wrong!!  Never try it again!! Have fun")
+throw new Error ("Oops!! Something went wrong!!  Please dont ever retry and Irritate :p")
 
 
 
