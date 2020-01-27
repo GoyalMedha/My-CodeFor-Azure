@@ -12,6 +12,8 @@ var app = express();
 //Start application insight by registering it
 var appInsights =require('applicationinsights');
 appInsights.setup('0aabf9e1-652d-4e57-84bc-cf5c7b71651c');
+
+
 appInsights.start();
 
 
@@ -29,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.user('/problem',function()
+app.use('/problem',function()
 {
 throw new Error ("Oops!! Something went wrong!!")
 
